@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>multiscroll.js - split multi-scrolling pages plugin</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels." />
+	<meta name="keywords"  content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,screen,panels,layouts,vertical,split,splited" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="jquery.multiscroll.css" />		
+	<link rel="stylesheet" type="text/css" href="examples/examples.css" />		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="jquery.multiscroll.js"></script>
+
+	<script type="text/javascript">
+	 $(document).ready(function() {
+            $('#myContainer').multiscroll({
+            	sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#1bbc9b', '#4BBFC3', '#7BAABE', '#4BBFC3', '#7BAABE'],
+            	anchors: ['first', 'second', 'third', 'forth', 'fifth', 'sixth', 'seventh', 'eighth'],
+            	menu: '#menu',
+            	navigation: true,
+            	navigationTooltips: ['One', 'Two', 'Three', 'Forth', 'Fifth', 'Sixth', 'Seventh', 'Eighth'],
+            	loopBottom: true,
+            	loopTop: true
+            });
+        });
+    </script>
+</head>
+<body>
+
+
+<ul id="menu">
+	<li data-menuanchor="first"><a href="#first">Home</a></li>
+	<li data-menuanchor="second"><a href="#second">KOTA NEELIMA</a></li>
+	<li data-menuanchor="third"><a href="#third">GALINA L.</a></li>
+	<li data-menuanchor="forth"><a href="#forth">TONY M.</a></li>
+	<li data-menuanchor="fifth"><a href="#fifth">CHITRA MUDGAL</a></li>
+	<li data-menuanchor="sixth"><a href="#sixth">BRIGITTE U.K.</a></li>
+	<li data-menuanchor="seventh"><a href="#seventh">ABEER Y.H.</a></li>
+	<li data-menuanchor="eighth"><a href="#eighth">JOSH S.</a></li>
+</ul>
+
+<div id="myContainer">
+
+	<div class="ms-left">
+		<div class="ms-section" id="left1">
+				<h1>JECRC UNIVERSITY </h1>
+				<h4>presents</h4>
+		</div>
+		<div class="ms-section" id="left2">
+			
+			<img src="examples/Kota_Neelima.jpg" height="65%" >
+			<h2><B>KOTA NEELIMA</B>
+			</h2>
+			<h3>(Questioning the system)<BR>
+				(My fiction is realistic)<BR>
+				25th Jan 2018<BR>
+				11:00 AM</h3>
+
+		</div>
+
+		<div class="ms-section" id="left3">
+			<img src="examples/Galina_Lazareva.jpg" height="65%">
+			<h2><b>GALINA LAZAREVA </b></h2>
+			<h3>
+				(The genre will never die)<BR>
+				27th Jan 2018<BR>
+				11:00 AM<BR>
+
+			</h3>
+		</div>
+
+		<div class="ms-section" id="left4">
+			<img src="examples/Tony_Maniaty.jpg" height="60%">
+			<h2><b>TONY MANIATY</b></h2>
+			<h3>(Intrigued by human behavior)<br>
+				27th Jan 2018<br>
+				11:00 AM<br>
+			</h3>
+		</div>
+		<div class="ms-section" id="left5">
+			<img src="examples/Chitra_Mudgal.jpg" height="65%">
+			<h2>CHITRA MUDGAL</h2>
+			<h3>(साहित्यिक मूल्यों में सामाजिक सार्थकता का महत्व हमेशा बना रहेगा)</h3>
+		</div>
+		<div class="ms-section" id="left6">
+			<img src="examples/Brigette_U_K.jpg" height="65%">
+			<h2>BRIGITTE UTTAR KORNETZKY</h2>
+			<h3>(the triumph of the human spirit in the face of great suffering and adversity)<BR>
+			27th Jan 2018<BR>
+			02:00 PM<BR>
+</h3>
+		</div>
+		<div class="ms-section" id="left7">
+			<img src="examples/Abeer_Y_Hoque.jpg" height="65%">
+			<h2>ABEER Y. HOQUE</h2>
+		<h3>(An artistic mesh of stories, poetry and photography)<br>
+
+			25.01.2018<br>
+			02:00 PM<br>
+		</h3>
+		</div>
+		<div class="ms-section" id="left8">
+			<img src="examples/Josh.jpg" height="65%">
+			<h2>JOSH STEINBAUER</h2>
+			<h3>(Deals with Inner Self)<br>
+				25-January 2018<br>
+
+				02:00 PM<br>
+</h3>
+		</div>
+	</div>
+	
+	<div class="ms-right">
+		<div class="ms-section" id="right1">
+			<br>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<br>
+			<br>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<h1>WOW</h1>
+			
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<BR>
+			<B>DEVELOPED BY: MANAS SAXENA (RD)<B><br>
+				Btech I Year CSE
+			JECRC UNIVERSITY
+		</div>
+		<div class="ms-section" id="right2">
+			<p>Kota Neelima has worked as a political journalist for 22 years with various leading newspapers. She is the author of four novels dwelling on the themes of farmer suicides, gender issues and media and political ethics in India as well as two books on spirituality. Her third novel, Shoes of the Dead, was a critique of the inheritance of political power in India, and is being made into a film. She was a senior research fellow at the School of Advanced International Studies at Johns Hopkins University and her recent academic research is about electoral democracy in India that centralises perception at the expense of peripheries. Her upcoming nonfiction book, Widows of Vidarbha, Making of Shadows, is based on the lives of farm widows in rural India.</p>
+		</div>
+
+		<div class="ms-section" id="right3">
+			<p>Galina Lazareva is an award-winning Russian poet, translator, singer and performer. Based in Sydney at the University of NSW, she won the Grand Prix at the 2017 Pushkin in Britain Russian Poetry Festival and a Russian Academy of Sciences Poetry Translation Award. Her critically acclaimed translation of Australian and British poets, Eternity Can Wait, was published in 2011.</p>
+		</div>
+
+		<div class="ms-section" id="right4">
+			<p>Tony Maniaty is an internationally known Penguin author, journalist and media coach. He had published four books, with Penguin. (Seeing his first novel with the Penguin logo was a special moment.) The themes of his work arise largely from his experience - what's the point of having a life if you're not going to write about it? - and his time as a correspondent: exploring the impacts of war and upheaval, displacement and migration. He is currently working on a cycle of novels about refugees. His blog explores these topics, as well as the cultural spaces he enjoy: cinema, journalism, history, biography, photography, architecture and design, travel, music and - naturally - writing and literature, in all its wonderful forms.</p>
+		</div>
+		<div class="ms-section" id="right5">
+			<p>Chitra Mudgal is the first Indian woman to receive the Vyas Samman for her novel Avaan, hailed as one of the greatest literary works in Hindi. Avaan, which has received worldwide acclaim, portrays the lives and times during the Trade Union Movement during the time of Datta Samant. A prolific writer, Mudgal’s works spans short stories, novels, children’s books, plays, essays and translations. Her latest work includes the short story collections Lokpriya Kahaniyan and Chuni Hui Kahaniyan and the novel Post Box no. 203 , Nalasopara.</p>
+		</div>
+		<div class="ms-section" id="right6">
+			<p>Brigitte Uttar Kornetzky is a German filmmaker based in Switzerland. Amongst her studies are juridical sciences, philosophy, art history and fine arts and classical singing. Her documentary films on human rights issues in Africa and conflict between humans and elephants in India have received numerous nominations and awards internationally. She is the Founder and President of Elefanten in Not, a charity in Switzerland, and Swiss Ambassador for Captive Elephants at the Federation of Indian Animal Protection Organization in India.
+			</p>
+		</div>
+		<div class="ms-section" id="right7">
+			<p>Abeer Y. Hoque is a Nigerian-born Bangladeshi-American writer and photographer. Her books include The Long Way Home, atravel photography and poetry monograph, The Lovers and the Leavers, a collection of linked stories and the memoir Olive Witch. </p>
+		</div>
+		<div class="ms-section" id="right8">
+			<p>Josh Steinbauer is an award-winning filmmaker, musical composer, and published poet who lives in New York. His feature documentary Paper Stars and his latest narrative Cap’n Flapjack have screened in festivals all over the world. He was a featured speaker in Goa and Chennai Art festivals, and has had his videos published in Scroll.in and the Times of India.
+
+</p>
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>
